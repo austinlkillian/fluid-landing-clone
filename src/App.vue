@@ -4,7 +4,7 @@
     <div id="frame">
       <div id="top">
         <div id="top-top"></div>
-        <div id="logo"></div>
+        <div id="logo" @click='navShow=!navShow'></div>
       </div>
       <div id="bottom"></div>
       <div id="left"></div>
@@ -12,7 +12,7 @@
     </div>
 
     <div id="port-container">
-      <header>
+      <header v-if='navShow'>
         <div id="header-container">
           <div id="title">
             <p>FLUID</p>
@@ -58,6 +58,7 @@ export default {
   name: "app",
   data() {
     return {
+      navShow: false,
       portList: [
         {img:'http://getfluid.com/site/uploads/2016/01/fluid_sign_662x492_acf_cropped.jpg', co: 'FLUID', how: 'DESIGN | WEB DEV'},
         {img:'https://www.gmc.com/content/dam/gmc/na/us/english/index/shared-assets/jellybeans/2018/sierra-ld/sierra-denali/2018-sierra-1500-denali-onyx-black.jpg?imwidth=162', co: 'FLUID', how: 'DESIGN | WEB DEV'},
@@ -191,7 +192,7 @@ $colors: (
     header {
       width: 100%;
       height: 150px;
-      background: red;
+      background: rgba(37, 37, 37, 0.776);
       position: fixed;
       z-index: 2;
       display: flex;
@@ -203,24 +204,32 @@ $colors: (
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        position: relative;
+        top: 25px;
       }
 
       #title {
-        width: 33%;
+        width: 25%;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
       }
 
       #nav {
-        width: 33%;
+        width: 50%;
 
         ul {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          font-size: 20px;
+          font-weight: bold;
+          color: color(accent)
         }
       }
 
       #icons {
-        width: 33%;
+        width: 25%;
         display: flex;
         justify-content: flex-end;
 

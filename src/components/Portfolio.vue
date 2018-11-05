@@ -12,6 +12,11 @@
 <script>
 export default {
   name: 'Portfolio',
+  data() {
+    return{
+      infoShow: false
+    }
+  },
   props: ['co']
 }
 </script>
@@ -43,6 +48,7 @@ $colors: (
     }
 
     #info {
+      visibility: hidden;
       background: rgba(0, 0, 0, 0.809);
       z-index: 1;
       width: 100%;
@@ -51,6 +57,10 @@ $colors: (
       flex-direction: column;
       justify-content: flex-end;
       color: white;
+    }
+
+    #body:hover #info {
+      visibility: visible;
     }
 
     h1 {
