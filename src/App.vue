@@ -23,7 +23,7 @@
           </div>
           <div id="nav">
             <ul>
-              <li>PORTFOLIO</li>
+              <span><li>PORTFOLIO</li></span>
               <li>SERVICES</li>
               <li>AGENCY</li>
               <li>BLOG</li>
@@ -266,7 +266,20 @@ $colors: (
           align-items: center;
           font-size: 20px;
           font-weight: bold;
-          color: color(accent)
+
+          span {
+            li{
+              color: white;
+            }
+          }
+
+          li {
+            color: color(accent);
+          }
+
+          li:hover {
+            color: white;
+          }
         }
       }
 
@@ -296,17 +309,21 @@ $colors: (
       z-index: 2;
 
       ul {
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         font-size: 17px;
-        color: white;
         letter-spacing: 4px;
 
         li{
           margin: 10px;
+          color: white;
+        }
+
+        li:hover {
+          color: color(accent);
         }
       }
     }
@@ -340,6 +357,7 @@ $colors: (
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: black;
 
       img {
         width: 30px;
@@ -349,6 +367,10 @@ $colors: (
     p {
       font-weight: bold;
       color: grey;
+    }
+
+    p:hover{
+      color: black;
     }
   }
 
