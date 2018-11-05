@@ -3,7 +3,10 @@
     <img v-bind:src="co.img" />
     <div id="info">
       <div id="info-container">
-        <h1>{{co.co}}</h1>
+        <div id="co-container">
+          <h1>{{co.co}}</h1>
+          <div id="tri"></div>
+        </div>
         <hr/>
         <p>{{co.how}}</p>
       </div>
@@ -67,6 +70,20 @@ $colors: (
       position: relative;
       bottom: 20px;
       cursor: pointer;
+
+      #co-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #tri {
+          width: 50px;
+          height: 50px;
+          clip-path: polygon(0 0, 0 100%, 51% 50%);
+          background: orange;
+        }
+      }
     }
 
     img:hover + #info {
