@@ -2,9 +2,11 @@
   <div id="body">
     <img v-bind:src="co.img" />
     <div id="info">
-      <h1>{{co.co}}</h1>
-      <hr/>
-      <p>{{co.how}}</p>
+      <div id="info-container">
+        <h1>{{co.co}}</h1>
+        <hr/>
+        <p>{{co.how}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -35,9 +37,9 @@ $colors: (
   #body {
     width: 33%;
     height: 400px;
-    margin: 3px;
     display: flex;
     position: relative;
+    border: 2px solid white;
 
     img {
       width: 100%;
@@ -56,10 +58,21 @@ $colors: (
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      color: white;
+      align-items: center;
     }
 
-    #body:hover #info {
+    #info-container{
+      color: white;
+      width: 80%;
+      position: relative;
+      bottom: 20px;
+    }
+
+    img:hover + #info {
+      visibility: visible;
+    }
+
+    #info:hover {
       visibility: visible;
     }
 
@@ -73,7 +86,8 @@ $colors: (
       height: 1px;
       width: 100%;
       border: none;
-      z-index: 0;
+      z-index: 5;
+      margin: 20px 0;
     }
 
     p {

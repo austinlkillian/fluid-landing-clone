@@ -4,7 +4,11 @@
     <div id="frame">
       <div id="top">
         <div id="top-top"></div>
-        <div id="logo" @click='navShow=!navShow'></div>
+        <div id="logo" @click='navShow=!navShow'>
+          <div id="stamp">
+            <p>+</p>
+          </div>
+        </div>
       </div>
       <div id="bottom"></div>
       <div id="left"></div>
@@ -105,7 +109,8 @@ $frame: 35px;
 
 $colors: (
   accent: rgb(255, 132, 0),
-  primary: white
+  primary: white,
+  secondary: rgb(187, 187, 187)
 );
 
 @function color($color-name){
@@ -144,11 +149,30 @@ $colors: (
   }
 
     #logo{
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       background: color(primary);
       z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #stamp{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid color(secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 60px;
+          font-weight: bold;
+          color: color(secondary)
+        }
+      }
     }
   }
 
@@ -181,12 +205,12 @@ $colors: (
   }
 
   #port-container {
-    width: calc(100% - 65px);
+    width: calc(100% - 60px);
     background: color(primary);
     position: relative;
     top: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     header {
