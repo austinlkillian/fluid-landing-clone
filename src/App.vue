@@ -166,6 +166,7 @@ $colors: (
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       #stamp{
         width: 50px;
@@ -255,6 +256,7 @@ $colors: (
         color: white;
         font-size: 30px;
         font-weight: bold;
+        cursor: pointer;
       }
 
       #nav {
@@ -275,6 +277,7 @@ $colors: (
 
           li {
             color: color(accent);
+            cursor: pointer;
           }
 
           li:hover {
@@ -292,6 +295,7 @@ $colors: (
           width: 30px;
           height: 30px;
           margin: 15px;
+          cursor: pointer;
         }
       }
 
@@ -320,6 +324,7 @@ $colors: (
         li{
           margin: 10px;
           color: white;
+          cursor: pointer;
         }
 
         li:hover {
@@ -357,16 +362,17 @@ $colors: (
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: black;
 
       img {
         width: 30px;
+        cursor: pointer;
       }
     }
 
     p {
       font-weight: bold;
       color: grey;
+      cursor: pointer;
     }
 
     p:hover{

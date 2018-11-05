@@ -66,6 +66,7 @@ $colors: (
       width: 80%;
       position: relative;
       bottom: 20px;
+      cursor: pointer;
     }
 
     img:hover + #info {
