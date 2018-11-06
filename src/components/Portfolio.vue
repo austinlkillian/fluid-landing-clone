@@ -80,7 +80,7 @@ $colors: (
         #tri {
           width: 50px;
           height: 50px;
-          clip-path: polygon(0 0, 0 100%, 51% 50%);
+          clip-path: polygon(45% 5%, 50% 0, 100% 50%, 50% 100%, 45% 95%, 90% 50%);
           background: orange;
         }
       }
