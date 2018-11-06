@@ -114,7 +114,7 @@ $frame: 35px;
 
 $colors: (
   accent: rgb(255, 132, 0),
-  primary: white,
+  primary: rgb(240, 240, 240),
   secondary: rgb(187, 187, 187)
 );
 
@@ -129,6 +129,7 @@ $colors: (
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: color(primary);
 
   #frame {
     z-index: 5;
@@ -292,8 +293,8 @@ $colors: (
         justify-content: flex-end;
 
         img {
-          width: 30px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
           margin: 15px;
           cursor: pointer;
         }
@@ -304,16 +305,16 @@ $colors: (
     #footer {
       position: fixed;
       width: calc(100% - 68px);
-      background: rgba(46, 46, 61, 0.801);
+      background: rgba(30, 33, 39, 0.801);
       bottom: 35px;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px 0;
+      padding: 17px 0;
       z-index: 2;
 
       ul {
-        width: 80%;
+        width: 60%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -335,36 +336,37 @@ $colors: (
   }
 
   #contact {
-    width: 80%;
-    height: 300px;
+    width: 100%;
+    height: 285px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 100px;
+    background: color(primary);
 
     h1 {
       font-family: Arial;
       font-weight: bold;
       font-size: 35px;
-      color: rgb(59, 59, 59);
+      color: rgb(8, 8, 8);
     }
 
     h3 {
-      font-family: arial;
-      font-weight: bold;
-      font-size: 25px;
-      color: grey;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: rgb(25, 25, 25);
+      letter-spacing: 4px;
     }
 
     #social {
-      width: 300px;
+      width: 20%;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       img {
-        width: 30px;
+        width: 40px;
         cursor: pointer;
       }
     }

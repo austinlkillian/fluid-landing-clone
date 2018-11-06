@@ -30,7 +30,7 @@ export default {
 
 $colors: (
   accent: rgb(255, 132, 0),
-  primary: white
+  primary: rgb(240, 240, 240)
 );
 
 @function color($color-name){
@@ -42,7 +42,7 @@ $colors: (
     height: 400px;
     display: flex;
     position: relative;
-    border: 2px solid white;
+    border: 2px solid color(primary);
 
     img {
       width: 100%;
@@ -69,13 +69,13 @@ $colors: (
       width: 80%;
       position: relative;
       bottom: 20px;
-      cursor: pointer;
 
       #co-container {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
 
         #tri {
           width: 50px;
