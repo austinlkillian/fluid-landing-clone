@@ -261,7 +261,9 @@ $colors: (
       }
 
       #nav {
-        width: 50%;
+        width: 40%;
+        position: relative;
+        right: 2.3%;
 
         ul {
           display: flex;

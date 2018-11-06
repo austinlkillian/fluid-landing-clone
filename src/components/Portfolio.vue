@@ -78,10 +78,10 @@ $colors: (
         cursor: pointer;
 
         #tri {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           clip-path: polygon(45% 5%, 50% 0, 100% 50%, 50% 100%, 45% 95%, 90% 50%);
-          background: orange;
+          background: rgba(255, 166, 0, 0.612);
         }
       }
     }
