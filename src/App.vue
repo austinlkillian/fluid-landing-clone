@@ -146,9 +146,9 @@ $colors: (
     align-items: center;
     z-index: 1;
 
-    #top:hover + header {
-      visibility: visible;
-  }
+  //   #top:hover + header {
+  //     visibility: visible;
+  // }
 
     #top-top {
     width: 100%;
@@ -224,13 +224,9 @@ $colors: (
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    header:hover {
-      visibility: visible;
-    }
-
-    header:hover {
-      visibility: visible;
-    }
+    // header:hover {
+    //   visibility: visible;
+    // }
 
     header {
       // visibility: hidden;
